@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="../jquery/jquery.js"></script>
-    <script src="../jquery/interface.js"></script>
-    <link rel="stylesheet" href="../public/reset.css" />
-    <link rel="stylesheet" href="../public/css/style.css" />
-    <script src="../src/thermostat.js"></script>
-    <meta charset="utf-8">
-    <title>Thermostat</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="../jquery/jquery.js"></script>
+  <script src="../jquery/interface.js"></script>
+  <link rel="stylesheet" href="../public/reset.css" />
+  <link rel="stylesheet" href="../public/css/style.css" />
+  <script src="../src/thermostat.js"></script>
+  <meta charset="utf-8">
+  <title>Thermostat</title>
 
-  </head>
+</head>
 
-  <body>
-  <div class="thermostat" id="screen" >
+<body>
+  <div class="container">
+    <div class="col-md-8"></div>
+    <div class="thermostat" id="screen" >
 
 
 
-        <div class="temperature">
-          20 °C
+      <div class="temperature">
+        20 °C
+      </div>
+<br><br>
+<div class="usage">
+  medium-usage
+</div>
+
+      <div class="power_saving">
+        Power Saving mode ON
+      </div>
+<br><br>
+
+    <div class="changes">
+      <div class="col-md-4" class="temp_change">
+
+        <div class="up">
+          <button type="button" value="up" class="btn btn-primary">UP</button>
+        </div>
+<br><br>
+        <div class="down">
+          <button type="button" value="down" class="btn btn-primary">DOWN</button>
         </div>
 
-        <div class="power_saving">
-          Power Saving mode ON
+      </div>
+
+      <div class="col-md-8" class="buttons">
+
+        <div class="eco">
+          <button type="button" name="eco" class="btn btn-primary">eco</button>
         </div>
-
-        <div class="usage">
-          medium-usage
+<br>
+        <div class="reset">
+          <button type="button" name="reset" class="btn btn-primary">reset</button>
         </div>
-
-        <div class="temp_change">
-
-          <div class="up">
-            <button type="button" value="up">UP</button>
-          </div>
-
-          <div class="down">
-            <button type="button" value="down">DOWN</button>
-          </div>
-
+<br>
+        <div class="power">
+          <form action="http://www.bbc.co.uk/weather/" >
+            <button type="submit" name="power" class="btn btn-primary">POWER</button>
+          </form>
+</div>
         </div>
-
-        <div class="buttons">
-
-          <div class="eco">
-            <button type="button" name="eco">eco</button>
-          </div>
-
-          <div class="reset">
-            <button type="button" name="reset">reset</button>
-          </div>
-
-          <div class="power">
-            <form action="http://www.google.com" >
-              <button type="submit" name="power">POWER</button>
-            </form>
-
-        </div>
-        </div>
-
-
-
+      </div>
     </div>
+    <h1>Check the weather near you:</h1> <br>
+    <div class="col-md-4"></div>
 
-    <div>
       <p class="weather_forcast"></p>
       <select id="weather">
         <option value="London">London</option>
         <option value="Manchester">Manchester</option>
         <option value="Brighton">Brighton</option>
       </select>
-      </form>
-    </div>
+    </form>
+  </div>
 
-  </body>
+
+</body>
 </html>
 
 <!-- img src="http://s18.postimg.org/nwgb93zc9/down.png" -->

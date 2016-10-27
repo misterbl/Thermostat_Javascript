@@ -18,30 +18,85 @@ src:
 .thermostat {
  font-family: 'Calculator';
  color: #00ef00;
+ margin-left: 5vw;
 
 }
 .thermostat {
   background:  linear-gradient(to right, rgba(138,134,130,1) 0%, rgba(230,230,230,1) 97%, rgba(230,230,230,1) 100%);
-  width: 40vw;
-  height: 50vw;
-  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 30%;
   padding: 2.5vw;
 }
 
 #screen {
   background: linear-gradient(to right, rgba(120,115,109,1) 0%, rgba(5,5,5,1) 66%, rgba(5,5,5,1) 100%);
- width: 50vw;
- height: 50vw;
+ width: 35vw;
+ height: 35vw;
  border-radius: 50%;
 }
-.temperature {
-  margin-left: 20vw;
-  margin-top: 10vw;
-   font-size: 4vw;
+h1 {
+  font-family: 'Calculator';
+  color: black;
+  font-size: 3vw;
 }
-
+.temperature {
+  margin-left: 10vw;
+  margin-top: 4vw;
+  font-size: 6vw;
+}
+.temp_change {
+    margin-left: 11vw;
+}
+.buttons {
+  margin-left: 14vw;
+}
 .power_saving {
   font-family: 'Calculator';
   color: #00ef00;
   font-size: 2vw;
 }
+.weather_forcast {
+  font-family: 'Calculator';
+  color: black;
+  font-size: 3vw;
+  margin-left: 20vw;
+}
+.changes {
+  margin-left: 5vw;
+}
+#weather {
+  font-family: 'Calculator';
+  color: black;
+}
+.eco {
+    /*background-image: url("https://i.imgsafe.org/2383cac792.png");
+    background-repeat: no-repeat;
+    background-size: 10%, 10%;*/
+/*}
+button[type=button] {
+ display: inline-block;
+ border-radius: 20px;
+ background-color: #F344B9 ;
+ border: none;
+ color: black ;
+ text-align: center;
+ font-size: 2vw;
+ padding: 20px;
+ width: 5vw;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin: 5px;
+ box-shadow: 0 9px #0000FF;
+}
+
+button[type=button]:hover {
+   border: 1px solid #999;
+   color: #000;
+}
+
+button[type=button]:active {
+ background-color: #3e8e41 ;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}*/
