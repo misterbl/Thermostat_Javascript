@@ -76,6 +76,14 @@ beforeEach(function () {
       thermostat.temperature = 26
         expect(thermostat.energyUsage ()).toEqual("high-usage")
     });
+
+    describe ("switchMode", function () {
+      it ('switches Power Saving on and off', function (){
+        thermostat.switchMode ()
+          expect(thermostat.powerSaving).toBe(false)
+      });
+    });
+
   });
 
 
