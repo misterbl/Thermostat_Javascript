@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="../jquery/jquery.js"></script>
     <script src="../jquery/interface.js"></script>
     <link rel="stylesheet" href="../public/reset.css" />
@@ -12,54 +13,66 @@
   </head>
 
   <body>
+  <div class="thermostat" id="screen" >
 
-    <div class="thermostat">
 
-      <div class="screen">
 
         <div class="temperature">
           20 °C
         </div>
 
         <div class="power_saving">
-          Power Saving On/Off
+          Power Saving mode ON
         </div>
 
         <div class="usage">
-          Low Usage
+          medium-usage
         </div>
 
-      </div>
+        <div class="temp_change">
 
-      <div class="temp_change">
+          <div class="up">
+            <button type="button" value="up">UP</button>
+          </div>
 
-        <div class="up">
-          <button type="button" name="up"></button>
+          <div class="down">
+            <button type="button" value="down">DOWN</button>
+          </div>
+
         </div>
 
-        <div class="down">
-          <button type="button" name="down"></button>
+        <div class="buttons">
+
+          <div class="eco">
+            <button type="button" name="eco">eco</button>
+          </div>
+
+          <div class="reset">
+            <button type="button" name="reset">reset</button>
+          </div>
+
+          <div class="power">
+            <form action="http://www.google.com" >
+              <button type="submit" name="power">POWER</button>
+            </form>
+
+        </div>
         </div>
 
-      </div>
 
-      <div class="buttons">
-
-        <div class="eco">
-          eco button
-        </div>
-
-        <div class="reset">
-          reset button
-        </div>
-
-        <div class="power">
-          power button
-        </div> -->
-
-      </div>
 
     </div>
+
+    <div>
+      <p class="weather_forcast"></p>
+      <select id="weather">
+        <option value="London">London</option>
+        <option value="Manchester">Manchester</option>
+        <option value="Brighton">Brighton</option>
+      </select>
+      </form>
+    </div>
+
   </body>
 </html>
 
