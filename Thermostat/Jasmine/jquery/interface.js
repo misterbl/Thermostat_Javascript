@@ -13,12 +13,14 @@ $( document ).ready(function(){
   $(".up").click(function () {
     thermostat.up();
     $(".usage").text(thermostat.energyUsage());
+    energyColor ();
     $(".temperature").text(thermostat.temperature + " °C");
   });
 
   $(".down").click(function () {
     thermostat.down();
     $(".usage").text(thermostat.energyUsage());
+    energyColor ();
     $(".temperature").text(thermostat.temperature + " °C");
   });
 
@@ -35,9 +37,22 @@ $( document ).ready(function(){
   $(".reset").click(function () {
     thermostat.resetTemp();
     $(".temperature").text(thermostat.temperature + " °C");
+    energyColor ();
   });
 
   $(".power").click(function () {
     alert ("Thermostat is switching off, good bye");
   });
+
+  function energyColor () {
+    if (thermostat.energyUsage () === "Low usage") {
+      $(".temperature").css('color', "#00ef00");
+    }
+    else if (thermostat.energyUsage () === "Medium usage") {
+      $(".temperature").css('color', "yellow");
+    }
+    else {
+      $(".temperature").css('color', "red");
+    }
+  };
 });
